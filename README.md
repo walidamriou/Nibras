@@ -1,7 +1,7 @@
 # Nibras
 A guide for students of the first year at The Algerian technical universities 
 
-## Website of FridgeOS Project
+## Website 
 https://Nibras.walidamriou.com
 
 ### Copyright CC 2020 Walid Amriou
