@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <title>تطبيق نبراس لسطح المكتب</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+  <meta name="description" content="نبراس، هو دليل موجه إلى طلبة السنة الأولى للشعب التقنية بالجامعة">
+  <meta name="author" content="WalidAmriou">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_buttons.css">
+  <link rel="stylesheet" href="font/stylesheet.css">
+  <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="material_design/material.min.css">
+  
+  <script src="material_design/material.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/language.js" ></script>
+
+  <style>
+    body,h1,h2,h3,h4,h5,h6,p,a {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body,
+    html {
+      color: #212121;
+      background-color: #FAFAFA
+    }
+    @media (min-width:600px){
+      .mdl-list {
+        padding-left: 30%;
+      }
+    }
+
+    @media (max-width:700px){
+      .mdl-list {
+        padding-left: 10%;
+      }
+    }
+
+    .bgimg {
+      background-image: url('img/matrix.svg');
+      min-height: 100%;
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    mark {
+      background-color: #94ebee;
+      color: black;
+    }
+
+    #your_new_password_text {
+      color: red;
+    }
+    .mdl-ceckbox{
+      width: 10%;
+    }
+    .mdl-list__item{
+      min-height:65px;
+    }
+  </style>
+</head>
+
+<body style="color: #212121;">
+  
+  <div class="devfast-display-container devfast-animate-opacity devfast-text-white">
+    <div class="devfast-display-topleft devfast-padding-large devfast-xlarge" style="margin: 10px">
+    </div>
+
+    <div class="devfast-display-topright devfast-padding-large devfast-xlarge" style="margin: 10px">
+    </div>
+
+    <br>
+    <center>
+      <div class="devfast-display-middle">
+        <h5 class="devfast-jumbo devfast-animate-top"></h5>
+        <img src="img/logo.png" style="width: 50px;">
+        <b>نبراس</b></h4>
+        <h6> <b>طور من قبل</b> عمريو وليد <br>
+        www.walidamriou.com</h6>
+
+        <h6> يمكنك من خلال هذه الصفحة تنزيل مختلف إصدارات تطبيق نبراس لسطح المكتب <br>
+        يمكنك عبر هذا التطبيق البحث عن الكلمة المراد ترجمتها في مكان واحد بالعربية أو الفرنسية <br>
+        تصميم التطبيق لا يتغير بين مختلف أنظمة التشغيل المدعومة أي أن نفس التصميم على لينكس، وينداوز وماك أو أس
+       <br>
+       التطبيق يعمل بدون الحاجة للإنترنات
+       <br>
+       إذا كنت ترى بأن هناك مشكلة في التطبيق يمكنك التواصل معي عبر الروابط أدناه
+       <br><br>
+
+        <img src="img/desktop.png" width="40%" height="40%" style="margin-bottom: 0px;"/>
+      
+        <h5 style="color: #B00020;background-color: #E0E0E0;">  لمستخدمي <b>لينكس</b></h5>
+        <br><br>
+          <b> snapcraft ثبته من خلال متجر</b> <br><br>
+            <a href="https://snapcraft.io/nibras">
+              <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
+              </a>
+              <br><br>
+          <b>أو إستخدم الطرفية</b> <br><br>
+          sudo snap install nibras 
+          
+          <br><br>
+
+
+
+          <h5 style="color: #B00020;background-color: #E0E0E0;"> لمستخدمي <b>Windows</b></h5>
+          <br><br>
+            <b>نزل ملف التثبيت</b> <br><br>
+
+        <button id="password_generate_button"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          style="border-radius:13px;background-color:#00758D"
+          onclick=" window.open('https://github.com/walidamriou/Nibras_Desktop/releases/download/1.0.0/nibras.Setup.1.0.0_32.exe','_blank')"
+          >
+          Windows 32 bit
+        </button>
+
+        <button id="password_generate_button"
+        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        style="border-radius:13px;background-color: #555759"
+        onclick=" window.open('https://github.com/walidamriou/Nibras_Desktop/releases/download/1.0.0/nibras.Setup.1.0.0_64.exe','_blank')"
+        >
+        Windows 64 bit
+      </button>
+
+
+        <br>
+        <br>
+
+
+
+        <h5 style="color: #B00020;background-color: #E0E0E0;"> لمستخدمي <b>MacOS</b></h5>
+        <br><br>
+        <b>نزل ملف التثبيت</b> <br><br>
+        <button id="password_generate_button"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          style="border-radius:13px;background-color: #555759"
+          onclick=" window.open('https://github.com/walidamriou/Nibras_Desktop/releases/download/1.0.0/nibras-1.0.0.dmg','_blank')"
+          >
+          .dmg file
+        </button>
+          <br>
+          <br>
+          <br>
+          <br>
+        <img src="img/anim.png" alt="GDG" style="max-width: 50%;"">
+      </div>
+    </center>
+    <div class=" devfast-display-bottomleft devfast-padding-large">
+      </div>
+  </div>
+
+
+  <!-- developer -->
+<div style="background-color: #f2f2f2;">
+
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col">
+      <center>
+      <img src="img/developer.jpg" style="max-width: 40%;">        
+      </center>
+  </div>
+
+    <div class="mdl-cell mdl-cell--8-col" style="color: #212121;">
+      <h5><b>يتم تطوير هذا المشروع من قبل <b>عمريو وليد</b></h5>
+      <h6>
+        مهندس أنظمة مدمجة ومطور برمجيات، حاصل على شهادة ماستر في الأنظمة المدمجة وشهادة ليسونس في الإلكترونيات
+      <br>
+      تم الحصول على تصريح تطوير هذا العمل من قبل المالك الأصلي لفكرة المشروع، الدكتور طه زروقي
+      </h6>
+      <br>
+      <a href="https://www.walidamriou.com/" target="_blank">Website</a> <b>.</b>
+      <a href="https://www.linkedin.com/in/walidamriou/" target="_blank">Linkedin</a> <b>.</b>
+      <a href="https://github.com/walidamriou" target="_blank">GitHub</a> <b>.</b>
+      <a href="https://twitter.com/walidamriou" target="_blank">Twitter</a> <b>.</b>
+      <a href="https://facebook.com/walidamriou" target="_blank">Facebook</a>
+    </div>
+    <br>
+
+
+  </div>
+
+</div>
+<!-- end developer -->
+
+
+<footer class="mdl-mega-footer">
+<div class="mdl-mega-footer__bottom-section">
+<div class="mdl-logo">مشروع نبراس</div>
+يطور مشروع نبراس من قبل عمريو وليد تحت رخصة المشاع الإبداعي الغير تجاري - منع الإشتقاق 4.0 دولي  2020
+
+<br>
+<br>
+شعار نبراس وإسمه ملك لأصحابه الأصليين
+</div>
+
+</footer>
+
+</body>
